@@ -1,0 +1,59 @@
+.love-message {
+    background: rgba(255, 68, 88, 0.08);
+    border: 1px solid rgba(255, 68, 88, 0.2);
+    border-radius: 20px;
+    padding: 24px;
+    margin: 30px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.love-message::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 68, 88, 0.1) 0%, transparent 70%);
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.message-text {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.95);
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    text-align: justify;
+}
+
+.message-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: relative;
+    z-index: 1;
+    text-align: left;
+}
+
+.message-footer span {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.signature {
+    font-size: 1.1rem !important;
+    color: #ff4458 !important;
+    font-weight: 500;
+}

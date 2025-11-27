@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #0a0a0a;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.app {
+    min-height: 100vh;
+    padding: 20px;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a0a15 100%);
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Header romântico */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px 0;
+}
+
+.hearts-decoration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 2px;
+    color: #ff4458;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%,
+    100% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+h1 {
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    background: linear-gradient(135deg, #fff 0%, #ffb5c0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Contador de tempo */
+.time-counter {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    backdrop-filter: blur(10px);
+}
+
+.calendar-icon {
+    color: #ff4458;
+    flex-shrink: 0;
+}
+
+.time-text {
+    flex: 1;
+}
+
+.time-label {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.time-values {
+    display: flex;
+    gap: 12px;
+    margin: 8px 0;
+    flex-wrap: wrap;
+}
+
+.time-unit {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.time-unit strong {
+    color: #ff4458;
+    font-size: 1.2rem;
+    margin-right: 4px;
+}
+
+.time-details {
+    font-family: 'Courier New', monospace;
+    font-size: 1.8rem;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+/* Ajustes mobile */
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .time-details {
+        font-size: 1.5rem;
+    }
+
+    .message-text {
+        font-size: 0.95rem;
+    }
+}

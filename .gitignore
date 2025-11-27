@@ -1,0 +1,10 @@
+node_modules
+dist/
+package-lock.json
+
+public/
+
+data.ts
+photos.ts
+playlist.ts
+MessageText.tsx
