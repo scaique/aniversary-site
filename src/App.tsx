@@ -56,9 +56,11 @@ export default function App() {
                                     <strong>{timeElapsed.months}</strong> {timeElapsed.months === 1 ? 'mês' : 'meses'}
                                 </span>
                             )}
-                            <span className="time-unit">
-                                <strong>{timeElapsed.days}</strong> {timeElapsed.days === 1 ? 'dia' : 'dias'}
-                            </span>
+                            {timeElapsed.days > 0 && (
+                                <span className="time-unit">
+                                    <strong>{timeElapsed.days}</strong> {timeElapsed.days === 1 ? 'dia' : 'dias'}
+                                </span>
+                            )}
                         </div>
                         <div className="time-details">
                             {String(timeElapsed.hours).padStart(2, '0')}:{String(timeElapsed.minutes).padStart(2, '0')}:{String(timeElapsed.seconds).padStart(2, '0')}

@@ -147,6 +147,11 @@
     letter-spacing: 0.3px;
 }
 
+.post-comment {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.90rem;
+}
+
 /* Dots customizados */
 .photo-swiper .swiper-pagination {
     bottom: 15px;

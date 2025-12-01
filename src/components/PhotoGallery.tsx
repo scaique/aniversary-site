@@ -24,7 +24,7 @@ export function PhotoGallery() {
             } else {
                 newSet.add(photoId);
                 setShowHeartAnimation(true);
-                setTimeout(() => setShowHeartAnimation(false), 800);
+                setTimeout(() => setShowHeartAnimation(false), 500);
             }
             return newSet;
         });
@@ -47,7 +47,7 @@ export function PhotoGallery() {
                     spaceBetween={0}
                     slidesPerView={1}
                     autoplay={{
-                        delay: 10000,
+                        delay: 5000,
                         disableOnInteraction: false,
                     }}
                     pagination={{
@@ -84,6 +84,7 @@ export function PhotoGallery() {
                             {likedPhotos.size} {likedPhotos.size === 1 ? 'curtida' : 'curtidas'}
                         </p>
                     )}
+                    {currentPhoto?.comment && <p className="post-comment">{currentPhoto?.comment}</p>}
                     <p className="love-quote">{currentPhoto?.caption}</p>
                     <div className="post-meta">
                         {currentPhoto?.location && (

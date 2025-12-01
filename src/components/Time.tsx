@@ -14,7 +14,7 @@ export default function Time({ timeElapsed }: { timeElapsed: timeElapsed }) {
                     {timeElapsed.months} {timeElapsed.months === 1 ? 'mês' : 'meses'}
                     {timeElapsed.days > 0 && ` e ${timeElapsed.days} ${timeElapsed.days === 1 ? 'dia' : 'dias'}`}
                 </>
-            ) : (
+            ) : timeElapsed.days > 0 && (
                 <>
                     {timeElapsed.days} {timeElapsed.days === 1 ? 'dia' : 'dias'}
                 </>

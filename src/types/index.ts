@@ -16,6 +16,7 @@ export interface Photo {
     caption?: string;
     date?: string;
     location?: string;
+    comment?: string;
 }
 
 export interface timeElapsed {
