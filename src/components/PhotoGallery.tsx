@@ -24,7 +24,11 @@ export function PhotoGallery() {
             } else {
                 newSet.add(photoId);
                 setShowHeartAnimation(true);
+<<<<<<< HEAD
                 setTimeout(() => setShowHeartAnimation(false), 800);
+=======
+                setTimeout(() => setShowHeartAnimation(false), 500);
+>>>>>>> 1872e5dc7a063961827b6543657ecfd55e14125d
             }
             return newSet;
         });
@@ -47,7 +51,11 @@ export function PhotoGallery() {
                     spaceBetween={0}
                     slidesPerView={1}
                     autoplay={{
+<<<<<<< HEAD
                         delay: 10000,
+=======
+                        delay: 5000,
+>>>>>>> 1872e5dc7a063961827b6543657ecfd55e14125d
                         disableOnInteraction: false,
                     }}
                     pagination={{

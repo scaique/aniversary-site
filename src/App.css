@@ -27,7 +27,11 @@ body {
 /* Header romântico */
 .header {
     text-align: center;
+<<<<<<< HEAD
     margin-bottom: 30px;
+=======
+    margin-bottom: 20px;
+>>>>>>> 1872e5dc7a063961827b6543657ecfd55e14125d
     padding: 20px 0;
 }
 
